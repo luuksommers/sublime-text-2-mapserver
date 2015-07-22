@@ -3,11 +3,11 @@
   "fileTypes": ["map"],
   "patterns": [
     {
-      "match" : "\\b(MAP|WEB|END|METADATA|LEGEND|LABEL|SYMBOL|STYLE|POINTS|LAYER|CLASS|PROJECTION)\\b",
+      "match" : "\\b(MAP|WEB|END|METADATA|LEGEND|LABEL|SYMBOL|STYLE|POINTS|LAYER|CLASS|PROJECTION|VALIDATION)\\b",
       "name" : "entity.name.function.mapserver"
     },
     {
-      "match" : "\\b(STATUS|LOG|NAME|SHAPEPATH|EXTENT|UNITS|IMAGETYPE|FONTSET|CONFIG|LOG|IMAGEURL|TRANSPARENT|TYPE|FONT|SIZE|LINEJOINMAXSIZE|LINEJOIN|FILLED|CHARACTER|ANTIALIAS|PROCESSING|DATA|DUMP|TEMPLATE|OPACITY|COLOR|OUTLINECOLOR|POSITION|ANGLE|LABELITEM|LABELMAXSCALE|BACKGROUNDCOLOR|FILTER|OFFSET|PRIORITY|MINSIZE|WIDTH|EXPRESSION|TEXT|BUFFER|FORCE|PARTIALS|DEBUG)\\b",
+      "match" : "\\b(STATUS|LOG|NAME|SHAPEPATH|EXTENT|UNITS|IMAGETYPE|FONTSET|CONFIG|LOG|IMAGEURL|TRANSPARENT|TYPE|FONT|SIZE|LINEJOINMAXSIZE|LINEJOIN|FILLED|CHARACTER|ANTIALIAS|PROCESSING|DATA|DUMP|TEMPLATE|OPACITY|COLOR|OUTLINECOLOR|POSITION|ANGLE|LABELITEM|LABELMAXSCALE|BACKGROUNDCOLOR|FILTER|OFFSET|PRIORITY|MINSIZE|WIDTH|EXPRESSION|TEXT|BUFFER|FORCE|PARTIALS|DEBUG|MASK|CLASSITEM|INCLUDE|SYMBOLSET|IMAGECOLOR)\\b",
       "name" : "keyword.source.syntax_name"
     },
     {
@@ -19,7 +19,7 @@
       "name" : "comment.line.number-sign.mapserver"
     },
     {
-      "match" : "(wms_title|wms_onlineresource|wms_srs|wms_extent|wfs_title|wfs_onlineresource|wfs_srs|gml_featureid|gml_include_items)",
+      "match" : "(wms_name|wms_title|wms_onlineresource|wms_srs|wms_extent|wfs_title|wfs_onlineresource|wfs_srs|gml_featureid|gml_include_items|wfs_enable_request|wms_timeextent|wms_timeitem|wms_timedefault|wms_timeformat|time|default_time)",
       "name" : "support.function.mapserver"
     },
     {
@@ -31,7 +31,7 @@
           "include" : "$self"
         },
         {
-          "match" : "(wms_title|wms_onlineresource|wms_srs|wms_extent|wfs_title|wfs_onlineresource|wfs_srs)",
+          "match" : "(wms_name|wms_title|wms_onlineresource|wms_srs|wms_extent|wfs_title|wfs_onlineresource|wfs_srs|wfs_enable_request|wms_timeextent|wms_timeitem|wms_timedefault|wms_timeformat|time|default_time)",
           "name" : "support.function.mapserver"
         },
         {
